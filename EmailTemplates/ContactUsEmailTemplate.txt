@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Email Template</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f9f9f9; margin: 0; padding: 0; }
+
+        .email-container { max-width: 600px; margin: 20px auto; background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; }
+
+        .email-header { background-color: #d52b27; color: #ffffff; padding: 15px; text-align: center; font-size: 18px; font-weight: bold; }
+
+        .email-body { padding: 20px; }
+
+        .email-body p { margin: 10px 0; line-height: 1.6; }
+
+        .email-body .label { font-weight: bold; }
+
+        .email-footer { background-color: #f1f1f1; text-align: center; color: #666; border-top: solid 1px #eae9e9; padding: 20px 10px; line-height: 20px; font-size: 11px; }
+    </style>
+</head>
+<body>
+
+    <div class="email-container">
+        <div class="email-header">
+            New Query Submission from {{Name}}
+        </div>
+        <div class="email-body">
+            <p>Dear Admin,</p>
+            <p>You have received a new query from the website.</p>
+            <p>Here are the details:</p>
+            <p><span class="label">Name:</span> {{Name}}</p>
+            <p><span class="label">Email:</span> {{Email}}</p>
+            <p><span class="label">Phone:</span> {{Phone}}</p>
+            <p><span class="label">Subject:</span> {{Subject}}</p>
+            <p><span class="label">Message:</span></p>
+            <p>{{Message}}</p>
+            <p>Please follow up with the user as soon as possible.</p>
+        </div>
+        <div class="email-footer">
+            <!--This email was automatically generated from the website contact form. Please do not reply to this email.-->
+            This email was sent from support@ratneshwealthpartners.com. if you need assistance or have questions, please contact Ratnesh Wealth Partners customer service at support@ratneshwealthpartners.com
+            <div>© {{Year}} Ratnesh Wealth Partners Plot No. 99, Sector 27A, Nigadi-Pradhikaran, Pune - 411044, Maharashtra, India.</div>
+        </div>
+    </div>
+</body>
+</html>

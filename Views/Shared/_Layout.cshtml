@@ -1,0 +1,673 @@
+﻿@{
+    string brandName = "Ratnesh Wealth Partners";
+    string brandNameSV = "SV Printers";
+    string brandEmail = "rohit@ratneshwealthpartners.com";
+    string supportEmail = "support@ratneshwealthpartners.com";
+    string factSheetLink = "https://www.amfiindia.com/investor-corner/online-center/monthlyfactsheets";
+    string codeOfConduct = "https://resources.investwellonline.com/due-diligence/AMFI_Code-of-Conduct.pdf";
+    string clientLogin = "https://clients.ratneshwealthpartners.com/login";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta content="Financial services, wealth management, investment advisory, portfolio management, tax planning, insurance services, personalized financial solutions, trusted financial partner, financial freedom, Ratnesh Wealth Partners"
+          name="keywords" />
+    <meta content="Discover Ratnesh Wealth Partners, your trusted financial services provider offering personalized wealth management, investment advisory, and financial planning solutions to secure your future."
+          name="description" />
+
+    <title>@ViewData["Title"] | Ratnesh Wealth Partners – Trusted Financial Services & Investment Solutions</title>
+
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/img/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/img/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="RWP" />
+    <link rel="manifest" href="/img/favicons/site.webmanifest" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css" />
+
+    <!-- plugin stylesheet links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+
+    <link href="~/css/rwp_bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/rwp-app.css" asp-append-version="true" />
+    @* <link rel="stylesheet" href="~/RWP_Core_Web_App.styles.css" asp-append-version="true" /> *@
+</head>
+
+<body>
+    <header>
+        <!-- Topbar Start -->
+        <div class="container-fluid px-0 wow fadeIn head-breadcrumb-container bg-light-2" data-wow-delay="0.1s">
+            <div class="row gx-0 align-items-center d-none h-100 d-lg-flex">
+                <div class="col-lg-6 px-5 text-start">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item">
+                            <a asp-controller="home" asp-action="index" class="small text-secondary">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a asp-controller="contact" asp-action="ContactUs" class="small text-secondary">Contact Us</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="javascript:void(0);" class="small text-secondary">Terms & Condition</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+        <!-- Brand & Contact Start -->
+        <div class="container-fluid py-2 px-5 wow fadeIn brand-container" data-wow-delay="0.1s">
+            <div class="row align-items-center top-bar">
+                <div class="col-lg-4 col-md-12 text-center text-lg-start">
+                    <a href="/home" class="navbar-brand m-0 p-0 text-decoration-none">
+                        <h1 class="fw-bold m-0 text-brand" style="font-size: 1.6rem">
+                            <img src="@Url.Content("~/img/RWP_logo.png")" alt="@brandName" width="100" />
+                            @brandName
+                        </h1>
+                    </a>
+                </div>
+                <div class="col-lg-8 col-md-7 d-none d-xxl-block">
+                    <div class="d-xxl-flex flex-xxl-row justify-content-xxl-evenly align-items-xxl-center flex-shrink-0">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
+                                <i class="far fa-clock text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <p class="mb-2">Contact between</p>
+                                <h6 class="mb-0">Mon - Fri, 9:30 AM - 6:00 PM</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-xxl-center">
+                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
+                                <i class="fa fa-phone text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <p class="mb-2">Connect us on</p>
+                                <h6 class="mb-0">+91 88560 00246</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
+                                <i class="far fa-envelope text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <p class="mb-2">Email us on</p>
+                                <h6 class="mb-0">
+                                    <a href="mailto:@brandEmail"
+                                       style="color: #111;">@brandEmail</a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Brand & Contact End -->
+        <!-- Navbar Start -->
+        <div id="navMenu">
+            <div class="nav-box">
+                <div id="navbar-title"><span>MENU</span></div>
+                <div id="navbar-open" onclick="openNavBox();" data-bs-toggle="collapse" data-bs-target="#navContainer">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                         fill="#c9c9c9">
+                        <path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <nav id="navContainer" class="container-fluid sticky-top wow fadeIn nav-shadow" data-wow-delay="0.1s">
+            <div class="container d-flex justify-content-md-evenly">
+                <ul class="text-capitalize">
+                    <!--navbar-close button starts-->
+                    <li>
+                        <button type="button" id="navbar-close" class="btn" onclick="closeNavBox();">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                                 fill="#c9c9c9">
+                                <path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" />
+                            </svg>
+                        </button>
+                    </li>
+                    <!--navbar-close button ends-->
+                    <li><a id="linkHome" aria-current="page" asp-area="" asp-controller="home" asp-action="index">Home</a></li>
+
+                    <!--drop-down menu for about us starts-->
+                    <li class="hide-on-mobile">
+                        <div class="nav-item dropdown">
+                            <a id="linkAbout" href="javascript:void(0);" class="bg-brand dropdown-toggle d-flex align-items-center">About Us</a>
+                            <div class="dropdown-menu border-0 rounded-0 rounded-bottom bg-brand m-0 p-0">
+                                @* @Html.ActionLink("Ratnesh Wealth Partners", "RatneshWealthPartners", "about", null, new { @class = "dropdown-item" })
+                                @Html.ActionLink("SV Printers", "SVPrinters", "about", null, new { @class = "dropdown-item rounded-bottom" }) *@
+                                <a class="dropdown-item" asp-area="" asp-controller="about" asp-action="RatneshWealthPartners">@brandName</a>
+                                <a class="dropdown-item rounded-bottom" asp-area="" asp-controller="about" asp-action="SVPrinters">@brandNameSV</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li id="accordionAU" class="flex-column show-on-mobile">
+                        <a href="javascript:void(0);" class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordionAU-Container" aria-expanded="false"
+                           aria-controls="accordionAU-Container">
+                            About Us<span class="ms-2"><i class="fas fa-angle-down"></i></span>
+                        </a>
+                        <div id="accordionAU-Container" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionAU">
+                            <div class="accordion-body pt-0">
+                                <a class="dropdown-item" asp-area="" asp-controller="about" asp-action="RatneshWealthPartners">@brandName</a>
+                                <a class="dropdown-item rounded-bottom" asp-area="" asp-controller="about" asp-action="SVPrinters">@brandNameSV</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--drop-down menu for about us ends-->
+                    <!--drop-down menu for offerings starts-->
+                    <li class="hide-on-mobile">
+                        <div class="nav-item dropdown">
+                            <a id="linkOffering" href="javascript:void(0);" class="bg-brand dropdown-toggle d-flex align-items-center">Offerings</a>
+                            <div class="dropdown-menu bg-brand border-0 rounded-0 m-0 p-0">
+                                <div class="custom-menu">
+                                    <div class="container">
+                                        <div class="row">
+                                            <!-- Left column with main menu items -->
+                                            <div class="menu-column col-4">
+                                                <div class="menu-item selected" data-target="1">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h6 class="mb-1 menu-title">@brandName</h6>
+                                                    </div>
+                                                    <small class="menu-sub-title">
+                                                        Rich investments, Lasting Legacies.
+                                                    </small>
+                                                </div>
+                                                <div class="menu-item" data-target="2">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <h6 class="mb-1 menu-title">S V Printers</h6>
+                                                    </div>
+                                                    <small class="menu-sub-title">
+                                                        Trader and importer of general printers, brochures and coated paper.
+                                                    </small>
+                                                </div>
+                                            </div>
+
+                                            <!-- Right column with corresponding sub-menus -->
+                                            <div class="sub-menu-container col-8">
+                                                <div class="sub-menu" data-menu="1">
+                                                    <div class="row g-2">
+                                                        <div class="col-6">
+                                                            <a class="d-block" asp-controller="Offerings" asp-action="MutualFunds">
+                                                                <strong class="d-block menu-title mb-0">
+                                                                    Mutual Funds
+                                                                </strong>
+                                                                <small class="text-secondary menu-sub-title">
+                                                                    Invest in
+                                                                    diversified portfolios tailored for every financial
+                                                                    goal.
+                                                                </small>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <a class="d-block" asp-controller="Offerings" asp-action="FixedDeposits">
+                                                                <strong class="d-block menu-title mb-0">
+                                                                    Fixed Deposits (FDs)
+                                                                </strong>
+                                                                <small class="text-secondary menu-sub-title">
+                                                                    Secure
+                                                                    guaranteed returns with low-risk fixed income
+                                                                    options.
+                                                                </small>
+                                                            </a>
+                                                        </div>
+
+                                                        <!-- Force next columns to break to new line at md breakpoint and up -->
+                                                        <div class="w-100 d-none d-md-block"></div>
+
+                                                        <div class="col-6">
+                                                            <a class="d-block" asp-area="" asp-controller="Offerings" asp-action="InsuranceProducts">
+                                                                <strong class="d-block menu-title mb-0">
+                                                                    Insurance Products
+                                                                </strong>
+                                                                <small class="text-secondary menu-sub-title">
+                                                                    Protect
+                                                                    your future with comprehensive insurance
+                                                                    solutions.
+                                                                </small>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <a class="d-block" asp-area="" asp-controller="Offerings" asp-action="Bonds">
+                                                                <strong class="d-block menu-title mb-0">Bonds</strong>
+                                                                <small class="text-secondary menu-sub-title">
+                                                                    Earn steady
+                                                                    income through reliable fixed-income
+                                                                    securities.
+                                                                </small>
+                                                            </a>
+                                                        </div>
+                                                        <!-- Force next columns to break to new line at md breakpoint and up -->
+                                                        <div class="w-100 d-none d-md-block"></div>
+
+                                                        <div class="col-6">
+                                                            <a class="d-block" asp-area="" asp-controller="Offerings" asp-action="EquityInvestments">
+                                                                <strong class="d-block menu-title mb-0">
+                                                                    Equity Investments
+                                                                </strong>
+                                                                <small class="text-secondary menu-sub-title">
+                                                                    Unlock
+                                                                    growth potential with strategic stock market
+                                                                    investments.
+                                                                </small>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <a class="d-block" asp-area="" asp-controller="Offerings" asp-action="RetirementPlanning">
+                                                                <strong class="d-block menu-title mb-0">
+                                                                    Retirement Planning
+                                                                </strong>
+                                                                <small class="text-secondary menu-sub-title">
+                                                                    Build a
+                                                                    secure and comfortable future with smart retirement
+                                                                    strategies..
+                                                                </small>
+                                                            </a>
+                                                        </div>
+                                                        <!-- Force next columns to break to new line at md breakpoint and up -->
+                                                        <div class="w-100 d-none d-md-block"></div>
+
+                                                        <div class="col-6">
+                                                            <a class="d-block" asp-area="" asp-controller="Offerings" asp-action="WealthManagement">
+                                                                <strong class="d-block menu-title mb-0">
+                                                                    Wealth Management
+                                                                </strong>
+                                                                <small class="text-secondary menu-sub-title">
+                                                                    Maximize
+                                                                    your wealth with personalized financial advisory
+                                                                    services.
+                                                                </small>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <a class="d-block" asp-area="" asp-controller="Offerings" asp-action="TaxPlanning">
+                                                                <strong class="d-block menu-title mb-0">
+                                                                    Tax Planning
+                                                                </strong>
+                                                                <small class="text-secondary menu-sub-title">
+                                                                    Optimize
+                                                                    your savings with effective tax management
+                                                                    solutions.
+                                                                </small>
+                                                            </a>
+                                                        </div>
+                                                        <!-- Force next columns to break to new line at md breakpoint and up -->
+                                                        <div class="w-100 d-none d-md-block"></div>
+
+                                                        <div class="col-6">
+                                                            <a class="d-block" asp-area="" asp-controller="Offerings" asp-action="EstatePlanning">
+                                                                <strong class="d-block menu-title mb-0">
+                                                                    Estate Planning
+                                                                </strong>
+                                                                <small class="text-secondary menu-sub-title">
+                                                                    Preserve
+                                                                    and transfer your legacy with comprehensive estate
+                                                                    solutions.
+                                                                </small>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <a class="d-block" asp-area="" asp-controller="Offerings" asp-action="RealEstateInvestments">
+                                                                <strong class="d-block menu-title mb-0">
+                                                                    Real Estate Investments
+                                                                </strong>
+                                                                <small class="text-secondary menu-sub-title">
+                                                                    Diversify
+                                                                    your portfolio with high-potential property
+                                                                    investments.
+                                                                </small>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="sub-menu" data-menu="2">
+                                                    <div class="row g-2">
+                                                        <div class="col-6">
+                                                            <a class="d-block" asp-area="" asp-controller="Offerings" asp-action="CommercialPrintingServices">
+                                                                <strong class="d-block menu-title mb-0">
+                                                                    Commercial Printing Services
+                                                                </strong>
+                                                                <small class="text-secondary menu-sub-title">
+                                                                    Delivering
+                                                                    high-quality prints tailored for your business
+                                                                    needs.
+                                                                </small>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <a class="d-block" asp-area="" asp-controller="Offerings" asp-action="PackagingPrintingServices">
+                                                                <strong class="d-block menu-title mb-0">
+                                                                    Packaging Printing Services
+                                                                </strong>
+                                                                <small class="text-secondary menu-sub-title">
+                                                                    Custom
+                                                                    packaging solutions designed to enhance your
+                                                                    brand.
+                                                                </small>
+                                                            </a>
+                                                        </div>
+
+                                                        <!-- Force next columns to break to new line at md breakpoint and up -->
+                                                        <div class="w-100 d-none d-md-block"></div>
+
+                                                        <div class="col-6">
+                                                            <a class="d-block" asp-area="" asp-controller="Offerings" asp-action="StationeryPrintingServices">
+                                                                <strong class="d-block menu-title mb-0">
+                                                                    Stationery Printing Services
+                                                                </strong>
+                                                                <small class="text-secondary menu-sub-title">
+                                                                    Personalized
+                                                                    stationery for professional and personal
+                                                                    use.
+                                                                </small>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <a class="d-block" asp-area="" asp-controller="Offerings" asp-action="BookMagazinePrintingServices">
+                                                                <strong class="d-block menu-title mb-0">
+                                                                    Book and Magazine Printing Services
+                                                                </strong>
+                                                                <small class="text-secondary menu-sub-title">
+                                                                    Crafting
+                                                                    premium books and magazines with precision and
+                                                                    care.
+                                                                </small>
+                                                            </a>
+                                                        </div>
+
+                                                        <!-- Force next columns to break to new line at md breakpoint and up -->
+                                                        <div class="w-100 d-none d-md-block"></div>
+
+                                                        <div class="col-6">
+                                                            <a class="d-block" asp-area="" asp-controller="Offerings" asp-action="PromotionalPrintingServices">
+                                                                <strong class="d-block menu-title mb-0">
+                                                                    Promotional Printing Services
+                                                                </strong>
+                                                                <small class="text-secondary menu-sub-title">
+                                                                    Boost your
+                                                                    brand visibility with eye-catching promotional
+                                                                    prints.
+                                                                </small>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li id="accordionOfferings" class="flex-column show-on-mobile">
+                        <a href="javascript:void(0);" class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordionOfferings-Container" aria-expanded="false" aria-controls="accordionFC-Container">
+                            Offerings<span class="ms-2"><i class="fas fa-angle-down"></i></span>
+                        </a>
+                        <div id="accordionOfferings-Container" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionOfferings">
+                            @* ratnesh wealth partners mobile links *@
+                            <div id="accordionRWP" class="accordion-body pt-0 pb-0">
+                                <a href="javascript:void(0);" class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordionRWP-Container" aria-expanded="false"
+                                   aria-controls="accordionFC-Container">
+                                    @brandName<span class="ms-2"><i class="fas fa-angle-down"></i></span>
+                                </a>
+                                <div id="accordionRWP-Container" class="accordion-collapse collapse"
+                                     aria-labelledby="flush-headingOne" data-bs-parent="#accordionRWP">
+                                    <div class="accordion-body pt-0">
+                                        <a asp-area="" asp-controller="Offerings" asp-action="MutualFunds" class="dropdown-item">Mutual Funds</a>
+                                        <a asp-area="" asp-controller="Offerings" asp-action="FixedDeposits" class="dropdown-item">Fixed Deposits (FDs)</a>
+                                        <a asp-area="" asp-controller="Offerings" asp-action="InsuranceProducts" class="dropdown-item">Insurance Products</a>
+                                        <a asp-area="" asp-controller="Offerings" asp-action="Bonds" class="dropdown-item">Bonds</a>
+                                        <a asp-area="" asp-controller="Offerings" asp-action="EquityInvestments" class="dropdown-item">Equity Investments</a>
+                                        <a asp-area="" asp-controller="Offerings" asp-action="RetirementPlanning" class="dropdown-item">Retirement Planning</a>
+                                        <a asp-area="" asp-controller="Offerings" asp-action="WealthManagement" class="dropdown-item">Wealth Management</a>
+                                        <a asp-area="" asp-controller="Offerings" asp-action="TaxPlanning" class="dropdown-item">Tax Planning</a>
+                                        <a asp-area="" asp-controller="Offerings" asp-action="EstatePlanning" class="dropdown-item">Estate Planning</a>
+                                        <a asp-area="" asp-controller="Offerings" asp-action="RealEstateInvestments" class="dropdown-item">Real Estate Investments</a>
+                                    </div>
+                                </div>
+                            </div>
+                            @* sv-printers mobile links *@
+                            <div id="accordionSV" class="accordion-body pt-0 pb-0">
+                                <a href="javascript:void(0);" class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordionSV-Container" aria-expanded="false"
+                                   aria-controls="accordionFC-Container">
+                                    @brandNameSV<span class="ms-2"><i class="fas fa-angle-down"></i></span>
+                                </a>
+                                <div id="accordionSV-Container" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionSV">
+                                    <div class="accordion-body pt-0">
+                                        <a asp-area="" asp-controller="Offerings" asp-action="CommercialPrintingServices" class="dropdown-item">Commercial Printing Services</a>
+                                        <a asp-area="" asp-controller="Offerings" asp-action="PackagingPrintingServices" class="dropdown-item">Packaging Printing Services</a>
+                                        <a asp-area="" asp-controller="Offerings" asp-action="StationeryPrintingServices" class="dropdown-item">Stationery Printing Services</a>
+                                        <a asp-area="" asp-controller="Offerings" asp-action="BookMagazinePrintingServices" class="dropdown-item">Book and Magazine Printing Services</a>
+                                        <a asp-area="" asp-controller="Offerings" asp-action="PromotionalPrintingServices" class="dropdown-item">Promotional Printing Services</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--drop-down menu for offerings ends-->
+                    <!--drop-down menu for Why Choose Us starts-->
+                    <li class="hide-on-mobile">
+                        <div class="nav-item dropdown">
+                            <a id="linkwhy-choose-us" href="javascript:void(0);" class="bg-brand dropdown-toggle d-flex align-items-center">Why Choose Us</a>
+                            <div class="dropdown-menu border-0 rounded-0 rounded-bottom bg-brand m-0 p-0">
+                                <a class="dropdown-item" asp-area="" asp-controller="WhyChooseUs" asp-action="RatneshWealthPartners">@brandName</a>
+                                <a class="dropdown-item rounded-bottom" asp-area="" asp-controller="WhyChooseUs" asp-action="SVPrinters">@brandNameSV</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li id="accordionWCU" class="flex-column show-on-mobile">
+                        <a href="javascript:void(0);" class="collapsed" data-bs-toggle="collapse"
+                           data-bs-target="#accordionWCU-Container" aria-expanded="false"
+                           aria-controls="accordionWCU-Container">
+                            Why Choose Us<span class="ms-2"><i class="fas fa-angle-down"></i></span>
+                        </a>
+                        <div id="accordionWCU-Container" class="accordion-collapse collapse"
+                             aria-labelledby="flush-headingOne" data-bs-parent="#accordionWCU">
+                            <div class="accordion-body pt-0">
+                                <a class="dropdown-item" asp-area="" asp-controller="WhyChooseUs" asp-action="RatneshWealthPartners">@brandName</a>
+                                <a class="dropdown-item rounded-bottom" asp-area="" asp-controller="WhyChooseUs" asp-action="SVPrinters">@brandNameSV</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--drop-down menu for Why Choose Us ends-->
+                    <li>
+                        <a id="linkKYCFatcaForms" asp-area="" asp-controller="Home" asp-action="KYCFatcaForm">KYC Fatca Forms</a>
+                    </li>
+
+                    <!--drop-down menu for financial calculators starts-->
+                    <li class="hide-on-mobile">
+                        <div class="nav-item dropdown">
+                            <a id="linkCalculators" href="javascript:void(0);"
+                               class="bg-brand dropdown-toggle d-flex align-items-center">Financial Calculators</a>
+                            <div class="dropdown-menu border-0 rounded-0 rounded-bottom bg-brand m-0 p-0">
+                                <a class="dropdown-item" asp-area="" asp-controller="Calculators" asp-action="SIP">SIP Calculator</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Calculators" asp-action="Retirement">Retirement Calculator</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Calculators" asp-action="Marriage">Marriage Calculator</a>
+                                <a class="dropdown-item rounded-bottom" asp-area="" asp-controller="Calculators" asp-action="Education">Education Calculator</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li id="accordionFC" class="flex-column show-on-mobile">
+                        <a href="javascript:void(0);" class="collapsed" data-bs-toggle="collapse"
+                           data-bs-target="#accordionFC-Container" aria-expanded="false"
+                           aria-controls="accordionFC-Container">
+                            Financial Calculators<span class="ms-2"><i class="fas fa-angle-down"></i></span>
+                        </a>
+                        <div id="accordionFC-Container" class="accordion-collapse collapse"
+                             aria-labelledby="flush-headingOne" data-bs-parent="#accordionFC">
+                            <div class="accordion-body pt-0">
+                                <a class="dropdown-item" asp-area="" asp-controller="Calculators" asp-action="SIP">SIP Calculator</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Calculators" asp-action="Retirement">Retirement Calculator</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Calculators" asp-action="Marriage">Marriage Calculator</a>
+                                <a class="dropdown-item rounded-bottom" asp-area="" asp-controller="Calculators" asp-action="Education">Education Calculator</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--drop-down menu for financial calculators ends-->
+                    <li><a id="linkContact" asp-area="" asp-controller="Contact" asp-action="ContactUs">Contact Us</a></li>
+                    <li><a href="@factSheetLink" target="_blank">Fact Sheet</a></li>
+                    <li><a class="nav-external-link" href="@clientLogin" target="_blank">Client Login</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="nav-overlay" onclick="closeNavBox();"></div>
+        <!-- Navbar End -->
+    </header>
+
+    <!-- Main Start -->
+    <main>
+        @RenderBody()
+    </main>
+    <!-- Main End -->
+    <!-- Footer Start -->
+    <footer class="container-fluid bg-dark-2 text-body footer mt-5 pt-5 wow fadeIn position-relative"
+            data-wow-delay="0.1s">
+        <div class="custom-shape-divider-top-1736747970">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                      class="shape-fill">
+                </path>
+            </svg>
+        </div>
+        <div class="container py-5 mt-lg-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p class="mb-2">
+                        <span class="d-inline-block"><i class="fa fa-map-marker-alt me-3"></i></span>Plot No. 99, Sector
+                        27A,
+                        <label class="d-block ms-4">Nigdi-Pradhikaran,</label>
+                        <label class="d-block ms-4">Pune - 411044</label>
+                    </p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 88560 00246</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>@brandEmail</p>
+                </div>
+                <div class="col-lg-2 col-md-6 text-capitalize">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="@clientLogin" target="_blank">Client Login</a>
+                    <a class="btn btn-link" asp-controller="Contact" asp-action="ContactUs">Contact Us</a>
+                    <a class="btn btn-link" asp-controller="Home" asp-action="KYCFatcaForm">KYC Fatca Forms</a>
+                    <a class="btn btn-link" href="@factSheetLink" target="_blank">Fact Sheet</a>
+                    <a class="btn btn-link" href="javascript:void(0);">Terms & Condition</a>
+                    <a class="btn btn-link" href="@codeOfConduct" target="_blank">Code of Conduct</a>
+                </div>
+                <div class="col-lg-3 col-md-6 text-capitalize">
+                    <h5 class="text-light mb-4">Financial Calculators</h5>
+                    <a class="btn btn-link" asp-area="" asp-controller="Calculators" asp-action="SIP">SIP Calculator</a>
+                    <a class="btn btn-link" asp-area="" asp-controller="Calculators" asp-action="Retirement">Retirement Calculator</a>
+                    <a class="btn btn-link" asp-area="" asp-controller="Calculators" asp-action="Marriage">Marriage Calculator</a>
+                    <a class="btn btn-link" asp-area="" asp-controller="Calculators" asp-action="Education">Education Calculator</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="container text-center">
+                        <h5 class="text-light mb-4">Download Our App</h5>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-6 footer-app-store-box">
+                                <a href="https://play.google.com/store/apps/details?id=com.ifa.now.app&hl=en_IN">
+                                    <img class="img-fluid google-store-logo" src="@Url.Content("~/img/google-play-app-store-logo.svg")" alt="google-play-app-store-logo" />
+                                </a>
+                            </div>
+                            <div class="col-6 footer-app-store-box">
+                                <a href="https://apps.apple.com/in/app/my-planner-finance-solved/id6446684872">
+                                    <img class="img-fluid apple-store-logo" src="@Url.Content("~/img/apple-store-logo.svg")" alt="apple-store-logo" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <img class="img-fluid mt-4 img-made-in-india" src="@Url.Content("~/img/made-india-circular-logo.jpg")" alt="Made in Bharat" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <p>
+                    <b>Risk Factors –</b> Investments in Mutual Funds are subject to Market Risks. Read all scheme
+                    related documents carefully before investing. Mutual Fund Schemes do not assure or guarantee any
+                    returns. Past performances of any Mutual Fund Scheme may or may not be sustained in future. There is
+                    no guarantee that the investment objective of any suggested scheme shall be achieved. All existing
+                    and prospective investors are advised to check and evaluate the Exit loads and other cost structure
+                    (TER) applicable at the time of making the investment before finalizing on any investment decision
+                    for Mutual Funds schemes. We deal in Regular Plans only for Mutual Fund Schemes and earn a Trailing
+                    Commission on client investments. Disclosure For Commission earnings is made to clients at the time
+                    of investments. Option of Direct Plan for every Mutual Fund Scheme is available to investors
+                    offering advantage of lower expense ratio. We are not entitled to earn any commission on Direct
+                    plans. Hence we do not deal in Direct Plans.
+                </p>
+                <p class="fw-bold">
+                    AMFI Registered Mutual Fund Distributor | ARN- 179309 | EUIN - 361187 | Date of initial
+                    Registration: @(DateTime.Now.Year.ToString()) <!--| Current validity: 25-FEB-2026 -->
+                </p>
+                <p class="fw-bold">
+                    For any Grievance/Query/Complaint/Feedback: Mobile No:+91 88560 00246 | Email Id : <a href="mailto:@supportEmail">@supportEmail</a>
+                </p>
+                <p class="fw-bold">
+                    All Right Reserved &copy; @(DateTime.Now.Year.ToString()) @brandName Disclaimer | Disclosure | Privacy Policy | T & C |
+                    SID/SAI/KIM | <a href="@codeOfConduct" target="_blank">Code of Conduct</a>
+                </p>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="javascript:void(0);">@brandName</a>, All Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Back to Top -->
+    <a href="javascript:void(0);" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @* <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
+
+    @* <script src="https://cdn.jsdelivr.net/npm/easing-js@1.1.2/easing.min.js"></script> *@
+    <script src="~/lib/easing/easing.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/counterup@1.0.2/jquery.counterup.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+
+    @* <script src="~/js/site.js" asp-append-version="true"></script> *@
+    <script src="~/js/rwp-app.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

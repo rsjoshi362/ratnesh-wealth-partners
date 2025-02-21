@@ -1,0 +1,98 @@
+﻿@model ContactModel
+
+@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header-contact py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center py-5">
+        <h1 class="display-4 text-white animated slideInDown mb-3">Contact</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a class="text-white" href="/home">Home</a></li>
+                <li class="breadcrumb-item text-primary active" aria-current="page">Contact</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Contact Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h6 class="section-title bg-white text-center text-primary px-3">Contact Us</h6>
+            <div class="section-title-line mx-auto"></div>
+            <h1 class="display-6 mb-4">If You Have Any Query, Please Feel Free Contact Us</h1>
+        </div>
+        <div class="row g-0 justify-content-center">
+            <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.5s">
+                <p class="text-center">
+                    We’re Here to Help You Achieve Your Financial Goals
+                </p>
+                <p class="text-center mb-4">
+                    Whether you have questions about our services or want to discuss your financial plans, we’re just a call or email away.
+                </p>
+                <form id="formContactUs" asp-controller="Contact" asp-action="SendEmail" method="post" class="needs-validation" novalidate>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input asp-for="@Model.Name" class="form-control" placeholder="Your Name" required>
+                                <label asp-for="@Model.Name">Your Name</label>
+                                <span class="text-denger" asp-validation-for="@Model.Name"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input asp-for="@Model.Email" class="form-control" placeholder="Your Email" required>
+                                <label asp-for="@Model.Email">Your Email</label>
+                                <span class="text-denger" asp-validation-for="@Model.Email"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <div class="form-floating">
+                                    <input asp-for="@Model.Phone" class="form-control" placeholder="Your Mobile Number" required>
+                                    <label asp-for="@Model.Phone">Your Mobile Number</label>
+                                    <span class="text-denger" asp-validation-for="@Model.Phone"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <div class="form-floating">
+                                    <input asp-for="@Model.Subject" class="form-control" placeholder="Enter Subject" required>
+                                    <label asp-for="@Model.Subject">Enter Subject</label>
+                                    <span class="text-denger" asp-validation-for="@Model.Subject"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea asp-for="@Model.Message" class="form-control" placeholder="Leave a comment here" rows="5" style="height: 100px" required></textarea>
+                                <label asp-for="@Model.Message">Comments</label>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <!--<button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Send Message</button>-->
+                            <button type="submit" class="btn btn-primary rounded-pill py-3 px-5">Send Message</button>
+                            @* <asp:Button ID="btnSendEmail" Text="Send Message" runat="server" CssClass="btn btn-primary rounded-pill py-3 px-5" OnClick="btnSendEmail_Click" /> *@
+                        </div>
+                    </div>
+                </form>
+
+                @if (ViewBag.Message != null)
+                {
+                    <p>@ViewBag.Message</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->
+<!-- Google Map Start -->
+<div class="container-xxl pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
+    <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.2603939739806!2d73.76853508479773!3d18.652307519945833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9dc311eb0cd%3A0x9a66fa2b2ba6ebc3!2sSector%2027A%2C%20Pradhikaran%2C%20Nigdi%2C%20Pimpri-Chinchwad%2C%20Maharashtra%20411044!5e0!3m2!1sen!2sin!4v1736318724324!5m2!1sen!2sin"
+            height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-hidden="false" tabindex="0"></iframe>
+</div>
+<!-- Google Map End -->
